@@ -12,6 +12,7 @@ reg rst = 1;
 wire [7:0] lfsr_out;
 
 tt_um_lfsr_parity user_project (
+    .rst_n(rst_n),
     .ena(ena)
     .clk(clk),
     .rst(rst),
