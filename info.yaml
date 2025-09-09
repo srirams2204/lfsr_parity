@@ -1,9 +1,9 @@
 # Tiny Tapeout project information
 project:
-  title:        ""      # Project title
-  author:       ""      # Your name
+  title:        "LFSR_with_Even_parity"      # Project title
+  author:       "Sriram.S"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  description:  "Pseudo Random Number Generator with Even Parity"      # One line description of what your project does
   language:     "Verilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -23,8 +23,8 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
+  ui[0]: "clk"
+  ui[1]: "rst"
   ui[2]: ""
   ui[3]: ""
   ui[4]: ""
@@ -33,14 +33,14 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  uo[0]: "lfsr_out[0]" 
+  uo[1]: "lfsr_out[1]" 
+  uo[2]: "lfsr_out[2]" 
+  uo[3]: "lfsr_out[3]" 
+  uo[4]: "lfsr_out[4]" 
+  uo[5]: "lfsr_out[5]" 
+  uo[6]: "lfsr_out[6]" 
+  uo[7]: "lfsr_out[7]"
 
   # Bidirectional pins
   uio[0]: ""
