@@ -7,7 +7,7 @@
 
 module tt_um_lfsr_parity (
     input wire clk,
-    input wire rst,
+    input wire rst_n,
     input wire ena,
     output reg [7:0] lfsr_out
 );
