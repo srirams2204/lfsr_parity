@@ -10,7 +10,7 @@ reg clk = 0;
 reg rst = 1;
 wire [7:0] lfsr_out;
 
-lfsr_parity uut (
+tt_um_lfsr_parity user_project (
     .clk(clk),
     .rst(rst),
     .lfsr_out(lfsr_out)
@@ -21,7 +21,7 @@ always #5 clk = ~clk;
 
 initial begin
     $dumpfile("lfsr_parity.vcd");
-    $dumpvars(0, lfsr_parity_tb);
+    $dumpvars(0, tb);
 
     #10 rst = 0;
 
