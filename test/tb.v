@@ -20,7 +20,7 @@ tt_um_lfsr_parity user_project (
 always #5 clk = ~clk;
 
 initial begin
-    $dumpfile("lfsr_parity.vcd");
+   $dumpfile("tt_um_lfsr_parity.vcd");
     $dumpvars(0, tb);
 
     #10 rst = 0;
