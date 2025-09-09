@@ -5,7 +5,8 @@
    that can be driven / tested by the cocotb test.py.
 */
 module tb ();
-reg ena = 1;
+reg rst_n;
+reg ena;
 reg clk = 0;
 reg rst = 1;
 wire [7:0] lfsr_out;
