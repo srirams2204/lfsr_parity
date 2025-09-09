@@ -5,12 +5,13 @@
    that can be driven / tested by the cocotb test.py.
 */
 module tb ();
-
+reg ena = 1;
 reg clk = 0;
 reg rst = 1;
 wire [7:0] lfsr_out;
 
 tt_um_lfsr_parity user_project (
+    .ena(ena)
     .clk(clk),
     .rst(rst),
     .lfsr_out(lfsr_out)
